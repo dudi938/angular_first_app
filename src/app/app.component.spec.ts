@@ -26,6 +26,12 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('my-app');
   });
 
+  it(`test field value'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.field).toEqual('blabla');
+  });
+
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
