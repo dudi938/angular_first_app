@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'projects',      component: ProjectsComponent },
   {
     path: 'contact',
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     AppComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
