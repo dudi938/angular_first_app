@@ -1,3 +1,11 @@
-<p>
-  projects works!
-</p>
+<div class="container">
+  <div class="row">
+    <ul>
+      <li *ngFor="let p of Projects">
+        {{p.OFirstName}}, {{p.OLastName}}, {{p.Description}}, {{p.OCity}}, {{p.Images}}    
+      </li>
+    </ul>
+
+
+  </div>
+</div>
